@@ -1,7 +1,20 @@
-s1 = "taco cat"
-s2 = s1.replace(" ", "")
+string = "taco cat"
 
+def palindrome(x: type(String)):
+    # Remove Whitespaces from String
+    x = x.replace(" ", "")
 
-s3 = "dog dog dog cat"
-s4 = s3.replace("dog", "DOG", 2)
-print(s4)
+    # Iterate Characters in String
+    w = []
+    for character in x:
+        w.append(character)
+    
+    p = list(reversed(w))
+
+    # Palindrome Condition
+    if w == p:
+        print("Palindrome.")
+    else:
+        print("Not a Palindrome.") 
+
+palindrome(string)
